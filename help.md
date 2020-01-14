@@ -12,7 +12,7 @@ Useful: https://www.w3schools.com/java/java_data_types.asp
 
 4 - Java version: 7
 
-## AX-WS Web Services
+## AX-WS Web Services (SOAP)
 
 ref: https://netbeans.org/kb/docs/websvc/jax-ws.html
 
@@ -47,5 +47,26 @@ If you are creating a Java EE project on GlassFish or WebLogic, select Implement
 
 ### Deploy and test
 
+If you are using the Tomcat Web Server, there is no test client. You can only run the project and see if the Tomcat Web Services page opens.
 
+In this case, before you run the project, you need to make the web service the entry point to your application. To make the web service the entry point to your application, right-click the project node and choose Properties.
 
+Open the Run properties and type /NameWebService (Specific Name of web service created) in the Relative URL field. Click OK.
+
+To run the project, right-click the project node again and select Run.
+
+(also click on "run project" green arrow)
+
+### Client in Java
+
+1 - Choose File > New Project (Ctrl-Shift-N on Linux and Windows, ⌘-Shift-N on MacOS). Select Java Application from the Java category. Name the project CalculatorWS_Client_Application. Leave Create Main Class selected and accept all other default settings. Click Finish.
+
+2 - Right-click the CalculatorWS_Client_Application node and choose New > Web Service Client. The New Web Service Client wizard opens.
+
+3 - Select Project as the WSDL source. Click Browse. Browse to the CalculatorWS web service in the CalculatorWSApplication project. When you have selected the web service, click OK.
+
+4 - Do not select a package name. Leave this field empty.
+
+5- Leave the other settings at default and click Finish.
+
+The Projects window displays the new web service client, with a node for the add method that you created:
