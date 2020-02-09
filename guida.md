@@ -1,5 +1,44 @@
-### RESTFUL WEB SERVICE
+############### GITHUB GRUPPO
+https://github.com/marcocosta96/SoftwareEngineeringLab
+#### LINK GUIDA
+https://github.com/marcocosta96/SoftwareEngineeringLab/blob/master/Dispensa%20operativa.txt
+
+
+############### LABORATORI
+https://github.com/marcocosta96/SoftwareEngineeringLab/tree/master/Labs
+https://github.com/nicoDs96/SE-LABs
+
+
+############### ESAMI SVOLTI
+
+#### SOAP + DB + (xml??)
+https://github.com/aserpi/msecs-1-se/tree/master/2019-07
+https://github.com/nicoDs96/exam (I not like this, is the same of previus but.. not better)
+
+#### SOAP + JMS
+https://github.com/aserpi/msecs-1-se/tree/master/2019-06
+
+#### JMS + DB
+https://github.com/aserpi/msecs-1-se/tree/master/2019-09
+
+
+
+
+#### REST + DB (maybe not complete)
+https://github.com/FedericaSole/RestfulConDB
+
+
+
+################ USEFUL
+#### RESTFUL WEB SERVICE
 RestFul netbeans tutorial (with db): https://netbeans.org/kb/docs/websvc/rest.html
+
+
+
+
+
+
+############# MAVEN HTTPS FIX
 
 If error in pom file.. maybe is error 501 (https required)
 => Put this code in pom.xml, at the end (https://stackoverflow.com/a/59781316)
@@ -30,5 +69,3 @@ If error in pom file.. maybe is error 501 (https required)
         </repository>
     </repositories>
 
-#### INSTALL RABBIMQ SERVER
-https://www.fosslinux.com/6339/how-to-install-rabbitmq-server-on-ubuntu-18-04-lts.htm
