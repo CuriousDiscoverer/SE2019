@@ -30,3 +30,5 @@ If error in pom file.. maybe is error 501 (https required)
         </repository>
     </repositories>
 
+#### INSTALL RABBIMQ SERVER
+https://www.fosslinux.com/6339/how-to-install-rabbitmq-server-on-ubuntu-18-04-lts.htm
