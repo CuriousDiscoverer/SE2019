@@ -1,1 +1,1 @@
-Labboratori
+Laboratori
