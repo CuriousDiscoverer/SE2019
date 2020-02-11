@@ -76,3 +76,21 @@ If error in pom file.. maybe is error 501 (https required)
         </repository>
     </repositories>
 
+
+
+
+
+######### RabbitMQ 
+
+https://activemq.apache.org/getting-started.html#InstallationProcedureforUnix
+
+######### ActiveMQ
+https://activemq.apache.org/getting-started.html#InstallationProcedureforUnix
+
+deve esser fatto partire il broker.. qualcosa tipo: 
+
+./activemq console
+
+poi
+
+./activemq start
