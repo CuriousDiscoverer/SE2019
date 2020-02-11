@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.3 (tags/2.3-7528; 2013-04-29T19:34:10+0000) JAXWS-RI/2.2.8 JAXWS/2.2 svn-revision#unknown. --><xs:schema xmlns:tns="http://juneexamservice.mycompany.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://juneexamservice.mycompany.com/">
+
+<xs:element name="director" type="tns:director"/>
+
+<xs:element name="getDirector" type="tns:getDirector"/>
+
+<xs:element name="getDirectorResponse" type="tns:getDirectorResponse"/>
+
+<xs:element name="getMovie" type="tns:getMovie"/>
+
+<xs:element name="getMovieResponse" type="tns:getMovieResponse"/>
+
+<xs:element name="getMovies" type="tns:getMovies"/>
+
+<xs:element name="getMoviesResponse" type="tns:getMoviesResponse"/>
+
+<xs:element name="movie" type="tns:movie"/>
+
+<xs:complexType name="getMovie">
+<xs:sequence>
+<xs:element name="arg0" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getMovieResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:movie" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="movie">
+<xs:sequence>
+<xs:element name="directorID" type="xs:int"/>
+<xs:element name="ID" type="xs:int"/>
+<xs:element name="title" type="xs:string" minOccurs="0"/>
+<xs:element name="year" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDirector">
+<xs:sequence>
+<xs:element name="arg0" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDirectorResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:director" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="director">
+<xs:sequence>
+<xs:element name="ID" type="xs:int"/>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+<xs:element name="yearOfBirth" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getMovies">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getMoviesResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
